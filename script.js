@@ -59,6 +59,8 @@ const getBookList = () => {
             }
             bookList.innerHTML = html;
         });
+
+    document.getElementById("search-input").value = "";
 };
 
 // event listeners
