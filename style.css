@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* variables */
+:root {
+    --tenne-tawny: #d65108;
+    --tenne-tawny-dark: #b54507;
+}
+body {
+    line-height: 1.6;
+    font-family: "Poppins", sans-serif;
+}
+
+/* button */
+.btn {
+    font-family: inherit;
+    cursor: pointer;
+    outline: 0;
+    font-size: 1rem;
+}
+
+/* title tag  */
+
+.title {
+    font-size: 2rem;
+    margin: 3rem;
+}
+
+.card-title {
+    font-size: 1.5rem;
+}
+
+/* input box  */
+
+.book-search-box {
+    margin: 1.2rem 0;
+    display: flex;
+    align-items: stretch;
+}
+.search-control,
+.search-btn {
+    width: 100%;
+}
+.search-control {
+    padding: 0 1rem;
+    font-size: 1.1rem;
+    font-family: inherit;
+    outline: 0;
+    border: 1px solid var(--tenne-tawny);
+    color: var(--tenne-tawny);
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+.search-control::placeholder {
+    color: var(--tenne-tawny);
+}
+.search-btn {
+    width: 55px;
+    height: 55px;
+    font-size: 1.8rem;
+    background: var(--tenne-tawny);
+    color: #fff;
+    border: none;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    transition: all 0.4s linear;
+}
+.search-btn:hover {
+    background: var(--tenne-tawny-dark);
+}
+
+/* single book  */
+
+.card {
+    margin-top: 30px;
+    border-radius: 15px;
+}
+
+.book-img {
+    width: 100%;
+    height: 360px;
+    border-radius: 15px 15px 0 0;
+}

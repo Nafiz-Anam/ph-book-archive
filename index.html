@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>Book Finder</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="book-search">
+                <h2 class="title text-center">Find The Book You Want</h2>
+                <div class="book-search-box">
+                    <input
+                        type="text"
+                        class="search-control"
+                        placeholder="Enter a Book Name"
+                        id="search-input"
+                    />
+                    <button
+                        type="submit"
+                        class="search-btn btn"
+                        id="search-btn"
+                    >
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- main ui  -->
+            <div class="container">
+                <h2 class="title text-center">Your Search Results :</h2>
+                <h3>
+                    Total results found for "<span id="searchInput"></span>" is
+                    <span id="results"></span>
+                </h3>
+                <!-- total result  -->
+                <h1 class="text-center" id="noMatch"></h1>
+                <!-- start of book item -->
+                <div id="book" class="row">
+                    <!-- end of book item -->
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
